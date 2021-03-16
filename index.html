@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Task</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="some-ulr">
+    <meta property="og:title" content="Front-end test">
+    <meta property="og:description" content="Test for HTML, CSS, JavaScript">
+    <meta property="og:image" content="some-ulr">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="some-ulr">
+    <meta property="twitter:title" content="Front-end test">
+    <meta property="twitter:description" content="Test for HTML, CSS, JavaScript">
+    <meta property="twitter:image" content="some-ulr">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+<div class="wrapper">
+    <!-- Header Menu -->
+    <header class="menu">
+        <nav>
+            <ul onclick="toggleDropdown(event)">
+                <li class="has_submenu"><a href="#">
+                    <span class="menu-header">Каталог оборудования</span>
+                    <span class="arrow arrow_down"></span>
+                </a>
+                    <ul onclick="toggleDropdown(event)">
+                        <li class="has_submenu"><a href="#">1 уровень
+                            <span class="arrow arrow_down arrow_right"></span>
+                        </a>
+                            <ul onclick="toggleDropdown(event)">
+                                <li class="has_submenu"><a href="#">2 уровень
+                                    <span class="arrow arrow_down"></span>
+                                </a>
+                                    <ul onclick="toggleDropdown(event)">
+                                        <li class="has_submenu"><a href="#">3 уровень
+                                            <span class="arrow arrow_down"></span>
+                                        </a>
+                                            <ul onclick="toggleDropdown(event)">
+                                                <li><a href="#">4 уровень</a></li>
+                                                <li><a href="#">4 уровень</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li onclick="event.stopPropagation()"><a href="#">1 уровень</a></li>
+                        <li onclick="event.stopPropagation()"><a href="#">1 уровень</a></li>
+                        <li onclick="event.stopPropagation()"><a href="#">1 уровень</a></li>
+                        <li onclick="event.stopPropagation()"><a href="#">1 уровень</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Products -->
+    <div class="products">
+        <div class="product_card" draggable="true">
+            <h3 class="product_title" draggable="false" contentEditable="true" onclick="showButton()">Product1</h3>
+            <div class="product_props">
+                <div class="product_size">10x100x15 см</div>
+                <div class="product_weight">200 г.</div>
+            </div>
+            <div class="product_price">900$</div>
+            <div class="buy_button">
+                <button class="buy">Купить</button>
+            </div>
+        </div>
+        <div class="product_card" draggable="true">
+            <h3 class="product_title" draggable="false" contentEditable="true" onclick="showButton()">Product2</h3>
+            <div class="product_props">
+                <div class="product_size">10x100x15 см</div>
+                <div class="product_weight">200 г.</div>
+            </div>
+            <div class="product_price">900$</div>
+            <div class="buy_button">
+                <button class="buy">Купить</button>
+            </div>
+        </div>
+        <div class="product_card" draggable="true">
+            <h3 class="product_title" draggable="false" contentEditable="true" onclick="showButton()">Product3</h3>
+            <div class="product_props">
+                <div class="product_size">10x100x15 см</div>
+                <div class="product_weight">200 г.</div>
+            </div>
+            <div class="product_price">900$</div>
+            <div class="buy_button">
+                <button class="buy">Купить</button>
+            </div>
+        </div>
+        <div class="product_card" draggable="true">
+            <h3 class="product_title" draggable="false" contentEditable="true" onclick="showButton()">Product4</h3>
+            <div class="product_props">
+                <div class="product_size">10x100x15 см</div>
+                <div class="product_weight">200 г.</div>
+            </div>
+            <div class="product_price">900$</div>
+            <div class="buy_button">
+                <button class="buy">Купить</button>
+            </div>
+        </div>
+        <div class="product_card" draggable="true">
+            <h3 class="product_title" draggable="false" contentEditable="true" onclick="showButton()">Product5</h3>
+            <div class="product_props">
+                <div class="product_size">10x100x15 см</div>
+                <div class="product_weight">200 г.</div>
+            </div>
+            <div class="product_price">900$</div>
+            <div class="buy_button">
+                <button class="buy">Купить</button>
+            </div>
+        </div>
+        <div class="product_card" draggable="true">
+            <h3 class="product_title" draggable="false" contentEditable="true" onclick="showButton()">Product6</h3>
+            <div class="product_props">
+                <div class="product_size">10x100x15 см</div>
+                <div class="product_weight">200 г.</div>
+            </div>
+            <div class="product_price">900$</div>
+            <div class="buy_button">
+                <button class="buy">Купить</button>
+            </div>
+        </div>
+        <div class="product_card" draggable="true">
+            <h3 class="product_title" draggable="false" contentEditable="true" onclick="showButton()">Product7</h3>
+            <div class="product_props">
+                <div class="product_size">10x100x15 см</div>
+                <div class="product_weight">200 г.</div>
+            </div>
+            <div class="product_price">900$</div>
+            <div class="buy_button">
+                <button class="buy">Купить</button>
+            </div>
+        </div>
+        <div class="product_card" draggable="true">
+            <h3 class="product_title" draggable="false" contentEditable="true" onclick="showButton()">Product8</h3>
+            <div class="product_props">
+                <div class="product_size">10x100x15 см</div>
+                <div class="product_weight">200 г.</div>
+            </div>
+            <div class="product_price">900$</div>
+            <div class="buy_button">
+                <button class="buy">Купить</button>
+            </div>
+        </div>
+        <div class="product_card" draggable="true">
+            <h3 class="product_title" draggable="false" contentEditable="true" onclick="showButton()">Product9</h3>
+            <div class="product_props">
+                <div class="product_size">10x100x15 см</div>
+                <div class="product_weight">200 г.</div>
+            </div>
+            <div class="product_price">900$</div>
+            <div class="buy_button"> 
+                <button class="buy">Купить</button>
+            </div>
+        </div>
+
+        <div id="save_button">
+            <form action="/" method="post"></form>
+                <input id="save" type="button" value="Готово" onclick="saveProductsNames()">
+            </form>
+        </div>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
